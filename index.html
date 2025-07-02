@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday! 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="balloon" style="left: 10%; top: 20%; background: #ff6b88;"></div>
+  <div class="balloon" style="left: 80%; top: 30%; background: #64b5f6; animation-delay: 0.5s;"></div>
+  <div class="balloon" style="left: 30%; top: 50%; background: #81c784; animation-delay: 1s;"></div>
+  <div class="balloon" style="left: 70%; top: 10%; background: #ffd54f; animation-delay: 1.5s;"></div>
+  
+  <div id="container">
+    <div id="page1">
+      <h2>🎉 Happy Birthday! 🎉</h2>
+      <div class="birthday-cake">🎂</div>
+      <p>Masukin nama kamu dulu dong biar lebih spesial~ 😊</p>
+      <input type="text" id="namaInput" placeholder="Tulis nama kamu di sini...">
+      <button onclick="startBirthday()">Ayo Mulai!</button>
+      <div class="page-indicator">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    
+    <div id="page2" class="hidden">
+      <h2>Hai <span id="namaDisplay"></span>! 🥳</h2>
+      <div class="birthday-cake">🎂</div>
+      <p>Selamat ulang tahun yaa~ Semoga hari ini penuh dengan kebahagiaan, tawa, dan kejutan menyenangkan! 🎊</p>
+      <button onclick="nextPage(3)">Main Yuk! 🎮</button>
+      <div class="page-indicator">
+        <div class="dot"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    
+    <div id="page3" class="hidden">
+      <h2>Game Balon Kejutan! 🎈</h2>
+      <p>Klik balonnya untuk lihat kejutan~ Semakin sering diklik semakin seru! 😍</p>
+      <div id="heart" onclick="clickHeart()">🎈</div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p id="clickMsg">Klik balonnya dong~</p>
+      <button onclick="nextPage(4)" class="hidden" id="nextAfterGame">Lanjut ke Hadiah! 🎁</button>
+      <div class="page-indicator">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot active"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+    
+    <div id="page4" class="hidden">
+      <h2>Ada Hadiah Spesial Buat Kamu! 🎁</h2>
+      <p>Klik kado di bawah ini untuk buka hadiahnya~</p>
+      <div id="gift" onclick="openGift()">🎁</div>
+      <p id="giftMsg" class="hidden"></p>
+      <button onclick="createConfetti()">Rayakan Lagi! 🎊</button>
+      <div class="page-indicator">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot active"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="celebration" id="celebration"></div>
+
+  <div id="musicControl">🔊</div>
+
+  <audio id="bgMusic" loop>
+    <source src="music-bg-hb.mp3">
+  </audio>
+
+  <audio id="celebrationSound">
+    <source src="selamat.mp3">
+  </audio>
+
+  <script src="script.js">
+    
+  </script
+</body>
+</html>
