@@ -13,3 +13,8 @@ Website interaktif ini dibuat untuk memberikan kejutan ulang tahun digital yang 
 - 💖 Animasi confetti & hati menggemaskan
 - 🔊 Background music & sound effect
 - 🎨 Desain pink aesthetic dengan balon melayang
+
+
+Priview:
+
+https://boywithscript.github.io/happy_birthday/
